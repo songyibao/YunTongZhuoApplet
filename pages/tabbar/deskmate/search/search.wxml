@@ -1,0 +1,36 @@
+<!--pages/tabbar/deskmate/search/search.wxml-->
+<block wx:for="{{av_users}}" wx:key="id">
+  <view class="icontainer box_shadow" data-detail="{{item}}">
+    <view style="flex-grow:1">
+      <view class='head'>
+        <view style="display:flex;align-items: center;">
+          <image style="border-radius:50%;width:60rpx;height:60rpx;margin-right:16rpx;margin-left: 10rpx;" src="{{item.avatarUrl}}" mode='aspectFill'>
+          </image>
+          <view style="color:rgb(101,101,106);font-size: 15px;">{{item.nickName}}</view>
+        </view>
+        <view style="width:auto;height:50rpx;padding:20rpx;box-sizing:border-box;margin-bottom:18rpx;border-radius:20rpx;display:flex;justify-content:center;align-items:center;font-size:26rpx;color:#828282">
+          最后活跃时间：{{item.update_time}}
+        </view>
+      </view>
+      <view class="comment">
+        <text style="font-size:30rpx;color:#828282">个人签名:{{item.signature}}</text>
+      </view>
+      <!-- <view class="tail">
+      <view class="dianzan" data-id="{{item.id}}" bindtap="accept">
+        <text style='margin-left:15rpx;color:rgb(0, 119, 255)'>同意</text>
+      </view>
+      <view class="pinglun">
+        <text style='margin-left:18rpx;color:red' data-id="{{item.id}}" bindtap="reject">拒绝</text>
+      </view>
+    </view> -->
+    </view>
+    <view style="flex-shrink:0;height: 100rpx;width: 100rpx;background:#33a9bf;color:white;border-radius: 50%;margin-left: 20rpx;display: flex;justify-content: center;align-items: center;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" bindtap="apply" data-id="{{item.id}}" bindtap="is_login">申请</view>
+  </view>
+</block>
+<!-- <view class="mask" wx:if="{{show}}">
+  <textarea class="txt" maxlength="-1" placeholder='发送申请同桌的备注' bindinput="commentChange"></textarea>
+  <view style="display: flex;width: 80%;">
+    <view class="sub-btn"bindtap='hide'>取消</view>
+    <view class="sub-btn" bindtap='show'>提交</view>
+  </view>
+</view> -->

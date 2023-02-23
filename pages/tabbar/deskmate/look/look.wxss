@@ -1,0 +1,63 @@
+/* pages/tabbar/deskmate/look/look.wxss */
+page {
+  padding: 2%;
+  box-sizing: border-box;
+  display: flex;
+  background-color: #999a9e1a;
+  /* background-color: #F4F3FA; */
+  flex-direction: column;
+  height: 100%;
+  width: 100%
+}
+
+.icontainer {
+  background: white;
+  padding: 12rpx;
+  border-radius: 15rpx;
+  margin-bottom: 20rpx;
+}
+
+.head {
+  margin: 0 0 14rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .class {
+  margin: 14rpx 0 14rpx 0;
+  background-color: rgb(241, 249, 255);
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10rpx 0 10rpx;
+} */
+
+.comment {
+  margin: 14rpx 0 14rpx 0;
+  border-radius: 18rpx;
+  padding: 20rpx;
+  background-color: #999a9e1a;
+}
+
+.tail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: solid 1px #e1e1e1
+}
+
+.dianzan {
+  margin-top: 12rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pinglun {
+  margin-top: 12rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

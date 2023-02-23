@@ -1,0 +1,40 @@
+<!-- <view class="top_border"></view> -->
+<view class="banner" bindtap="changeinfo">
+  <block wx:if="{{userInfo!==''}}">
+    <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+    <!-- <open-data type="userAvatarUrl"></open-data> -->
+    <view class="info">
+      <view style="font-size: 24px;margin-bottom: 20rpx;flex-grow: 1;font-weight:bold;">{{userInfo.nickName}}</view>
+      <view style="font-size: 16px;text-overflow: ellipsis;flex-grow: 1;">{{userInfo.signature}}</view>
+    </view>
+    <!-- <view style="box-sizing: border-box; padding: 40rpx;" catchtap="logout">
+      <image src="/images/my/logout.png" style="width: 40rpx;height: 40rpx;" ></image>
+    </view> -->
+  </block>
+  <block wx:else>
+    <image src="/images/my/default.png" class="avatar"></image>
+    <!-- <open-data type="userAvatarUrl"></open-data> -->
+    <view class="info">
+      <view style="font-size: 24px;margin-bottom: 20rpx;flex-grow: 1;">未登录</view>
+    </view>
+    <image src="/images/my/menu.png" style="width: 40rpx;height: 40rpx;position: relative;top:-30%;left: -1%;" bindtap="changeinfo"></image>
+  </block>
+  </view>
+<view class="page_view">
+  <view class="card" style="background: #87C5D3;font-size: 21px;" bindtap="toReward">我的积分</view>
+  <view class="holder">
+    <view class="item" style="background: #33A9BF;font-size: 20px;" bindtap="toReward">
+      <!-- <image src="/images/test.png" style="width: 80%;" mode="aspectFit"></image> -->
+      <text>我的\n奖励</text>
+    </view>
+    <view class="item" style="background: #87C5D3;font-size: 20px;" bindtap="toStudy">
+      <text>我的\n学习</text>
+    </view>
+  </view>
+  <view class="holder">
+    <view class="item" style="background: #87C5D3;font-size: 20px;" bindtap="toReward"><text>我的\n学习\n曲线</text></view>
+    <view class="item" style="background: #EDA6C7;font-size: 20px;" bindtap="toReward"><text>我的\n学习\n资料</text></view>
+  </view>
+</view>
+
+<!-- <view class="card">我的积分</view> -->

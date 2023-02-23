@@ -1,0 +1,55 @@
+<!--pages/tabbar/deskmate/deskmate.wxml-->
+<!-- <view class="border"></view> -->
+<view class="page_view">
+  <!-- <view class="holder" style="flex-grow: 1;color: white;font-family: 'zhehei';">打卡</view> -->
+  <view style="width:100%;flex-grow: 0.1;background: #ffffff;display: flex;justify-content:space-between;align-items: center;">
+    <view style="width: auto;color: #52AEC3;font-size: 20px;font-family: 'zhehei';margin-left: 20rpx;">当前同桌</view>
+    <view style="width: auto;color:darkgray;font-family: 'zhehei';">往期同桌 ></view>
+  </view>
+  <view class="holder" style="flex-grow: 5;">
+    <block wx:if="{{deskmate!=null}}">
+      <view style="display: flex;margin-bottom: 20rpx;width: 40%;justify-content: space-around;">
+        <image src="{{avatarUrl}}" style="box-shadow: 0px 0px 5px #888888;height:100rpx;width:100rpx;border-radius:50%;"></image>
+        <image src="{{deskmate.avatarUrl}}" style="box-shadow: 0px 0px 5px #888888;height:100rpx;width:100rpx;border-radius:50%;"></image>
+      </view>
+      <view class="button" bindtap="to_daka" hover-class="button_hover">进入</view>
+    </block>
+    <block wx:else>
+      <image src="{{avatarUrl}}" style="box-shadow: 0px 0px 5px #888888;height:100rpx;width:100rpx;border-radius:50%;"></image>
+      <view style="color:white;font-size:12px;margin-top: 30rpx;margin-bottom: 30rpx;">还没有同桌,快去申请同桌吧!</view>
+      <view class="button" bindtap="to_search">进入</view>
+    </block>
+
+  </view>
+  <view style="width:100%;flex-grow: 0.1;background: #ffffff;display: flex;justify-content:space-between;align-items: center;">
+    <view style="width: auto;color: #52AEC3;font-size: 20px;font-family: 'zhehei';margin-left: 20rpx;">同桌申请</view>
+    <view style="width: auto;color:darkgray;font-family: 'zhehei'" bindtap="to_search">去申请同桌 ></view>
+  </view>
+  <view class="holder" style="flex-grow: 4;">
+    <block wx:if="{{users.length!==0}}">
+      <view style="display: flex;justify-content: center;align-items: center;">
+        <block wx:for="{{users}}" wx:key="id">
+          <block wx:if="{{index<=2}}">
+            <view style="  display: flex;align-items:center;justify-content: flex-start;position:relative;left:{{-10*index}}rpx">
+              <image src="{{item.avatarUrl}}" style="box-shadow: 0px 0px 5px #888888;height:100rpx;width:100rpx;border-radius:50%;">
+              </image>
+            </view>
+          </block>
+          <block wx:else>
+            <view style="color: white;">
+              .</view>
+          </block>
+        </block>
+      </view>
+      <view style="color:white;font-size:12px;margin-top: 30rpx;margin-bottom: 30rpx;">{{users.length}}个同桌申请</view>
+      <view class="button" bindtap="to_look" hover-class="button_hover">点击查看</view>
+    </block>
+    <block wx:else>
+      <view style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+        <image src="/images/deskmate/no_apply.jpg" style="height:180rpx;" mode="heightFix"></image>
+        <view style="color:white;font-size:12px;margin-top: 30rpx;margin-bottom: 30rpx;">暂无同桌申请，主动出击试试～</view>
+      </view>
+      <view class="button" bindtap="to_search" hover-class="button_hover">申请同桌</view>
+    </block>
+  </view>
+</view>

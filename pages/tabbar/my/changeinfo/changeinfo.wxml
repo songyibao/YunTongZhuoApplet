@@ -1,0 +1,22 @@
+<!--pages/register/register.wxml-->
+<view class="panel">
+  <!-- <view class="container" style="margin-bottom:2rpx;border-radius:15rpx 15rpx 0 0">
+    <image src="https://wechatapp-1304998734.cos.ap-shanghai.myqcloud.com/WeChatApp/tel.png" style="width:50rpx;height:50rpx;margin-right:8rpx"></image>
+    <view class="item_hd">
+      <view>手机号</view>
+    </view>
+    <input class="item_bd" placeholder="选填" bindinput='changeTel' type="number" hold-keyboard="true" value="{{user.tel}}"/>
+  </view> -->
+  <view class="container" style="margin-bottom:20rpx;border-radius:15rpx 15rpx 15rpx 15rpx ">
+    <image src="https://wechatapp-1304998734.cos.ap-shanghai.myqcloud.com/WeChatApp/nick.png" style="width:50rpx;height:50rpx;margin-right:8rpx"></image>
+    <view class="item_hd">
+      <view>同桌寄语</view>
+    </view>
+    <input class="item_bd" placeholder="选填" bindinput='changeSign' hold-keyboard="true" value="{{user.signature}}"/>
+  </view>
+  <!-- <view class="holder">
+    <textarea adjust-position="true" auto-focus="{{true}}" placeholder="向您未来的同桌介绍一下自己吧~" style="width:100%;height:100%" bindinput="changeIntro" value="{{user.intro}}"/>
+  </view> -->
+</view>
+
+<button class="submit" bindtap="bindSubmit">提交</button>

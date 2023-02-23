@@ -1,0 +1,43 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/tabbar/my/changeinfo/changeinfo",
+                    "pathName": "pages/tabbar/my/changeinfo/changeinfo",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/tabbar/deskmate/mydeskmate/mydeskmate",
+                    "pathName": "pages/tabbar/deskmate/mydeskmate/mydeskmate",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/login/login",
+                    "pathName": "pages/login/login",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "das",
+                    "pathName": "pages/tabbar/community/topic/detail/detail",
+                    "query": "",
+                    "scene": null,
+                    "launchMode": "default"
+                }
+            ]
+        }
+    }
+}

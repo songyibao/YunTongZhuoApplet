@@ -1,0 +1,13 @@
+<!--pages/login/login.wxml-->
+<!-- <open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data> -->
+
+<!-- <text>pages/login/login.wxml</text> -->
+
+<image src="/images/logo.png" mode="aspectFit"></image>
+
+<view wx:if="{{canIUse}}" bindtap="bindGetUserInfo" class="login_button" hover-class="login_button_hover">微信用户一键登录</view>
+<view wx:if="{{canIUse}}" bindtap="cancel" style="color: #33A9BF;" >暂不登录</view>
+<view wx:else>请升级微信版本</view>
+
+<view style="margin-top: 100rpx;color: gray;">为体验完整功能，建议您授权登录</view>

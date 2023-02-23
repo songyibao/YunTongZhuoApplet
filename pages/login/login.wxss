@@ -1,0 +1,25 @@
+/* pages/login/login.wxss */
+page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.login_button {
+  margin-bottom: 20rpx;
+  font-family: 'zhehei';
+  width: 65%;
+  background: #33A9BF;
+  color: #ffffff;
+  height: 100rpx;
+  border-radius: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_button_hover {
+  background: #ABD6E1;
+}

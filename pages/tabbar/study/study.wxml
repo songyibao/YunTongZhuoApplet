@@ -1,0 +1,23 @@
+<!-- <view class="top_border" style="margin-bottom: 10rpx;"></view> -->
+<view class='history-table-wrap'>
+    <!-- <view class='title'>
+      <text style="color: #33a9bf;">最近学习记录</text>
+    </view> -->
+    <view class="table">
+      <view class="tr">
+          <view class="th th1">序号</view>
+          <view class="th th2">开始</view>
+          <view class="th th3">结束</view>
+          <view class="th th4">时长</view>
+      </view>
+      <view class="tr" wx:for="{{records}}" wx:key="id">
+          <view class="td td1">{{index+1}}</view>
+          <view class="td td2">{{item.start_time}}</view>
+          <view class="td td3">{{item.end_time}}</view>
+          <view class="td td4">{{item.str}}</view>
+      </view>
+    </view>
+ </view>
+ <!-- <scroll-view scroll-x="{{true}}" style="width: 100%;overflow: scroll;" class="item_center">
+    <canvas style="width: 480px;height: 300px;" canvas-id='zhexiantu'></canvas>
+ </scroll-view> -->

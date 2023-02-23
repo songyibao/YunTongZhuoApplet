@@ -1,0 +1,109 @@
+/* pages/tabbar/my/my.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.top_border {
+  width: 100%;
+  height: 2rpx;
+  border-bottom: 2rpx solid rgb(199, 199, 199);
+  margin-bottom: 20rpx;
+  color: #87C5D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0rpx 0rpx 15rpx 3rpx rgb(199, 199, 199);
+}
+.page_view {
+  padding: 2%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.banner {
+  font-family:'Courier New', Courier, monospace;
+  color: #ffffff;
+  box-sizing: border-box;
+  width: 100%;
+  background: #ABD6E1;
+  height: 20%;
+  border-radius: 0rpx 0rpx 40rpx 40rpx;
+  padding: 20rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0rpx 0rpx 15rpx 2rpx rgb(199, 199, 199);
+}
+
+.card {
+  font-family:'Courier New', Courier, monospace;
+  color: #ffffff;
+  box-sizing: border-box;
+  width: 95%;
+  background: #ABD6E1;
+  height: 20%;
+  border-radius: 30rpx;
+  padding: 20rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0rpx 0rpx 15rpx 2rpx rgb(199, 199, 199);
+}
+
+.holder {
+  padding: 20rpx;
+  font-family:'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  border-radius: 30rpx;
+  width: 100%;
+  background: #ffffff;
+  height: 21%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+  overflow: hidden;
+}
+
+.item {
+  color: #ffffff;
+  background: brown;
+  width: 45%;
+  height: 100%;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0rpx 0rpx 15rpx 2rpx rgb(199, 199, 199);
+}
+
+.avatar {
+  box-shadow: 0px 0px 5px #888888;
+  box-sizing: border-box;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+  margin-left: 20rpx;
+  /* overflow: hidden; */
+}
+
+.info {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 200rpx;
+  padding: 36rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* align-content: flex-start; */
+  /* overflow: hidden; */
+}

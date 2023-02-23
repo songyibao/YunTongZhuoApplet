@@ -1,0 +1,41 @@
+<!--pages/tabbar/deskmate/look/look.wxml-->
+<block wx:if="{{users.length==0}}">
+    <view style="display:flex;justify-content:center;align-items:center;flex-direction:column;width:100%;height:70%">
+        <image src="https://wechatapp-1304998734.cos.ap-shanghai.myqcloud.com/WeChatApp/empty.png"
+               style="width:300rpx;height:300rpx"></image>
+        <view style="display:flex;justify-content:center;align-items:center;color: rgb(158, 158, 157)">
+            暂时没有新的同桌申请~
+        </view>
+    </view>
+
+</block>
+<block wx:for="{{users}}" wx:key="id">
+  <view class="icontainer box_shadow" data-detail="{{item}}">
+    <view class='head'>
+      <view style="display:flex">
+        <image style="border-radius:50%;width:60rpx;height:60rpx;margin-right:16rpx;margin-left: 10rpx;" src="{{item.avatarUrl}}" mode='aspectFill'>
+        </image>
+        <view style="color:rgb(101,101,106)">{{item.nickName}}</view>
+      </view>
+      <view style="width:auto;height:50rpx;padding:20rpx;box-sizing:border-box;margin-bottom:18rpx;border-radius:20rpx;display:flex;justify-content:center;align-items:center;font-size:26rpx;color:#828282">
+        {{item.create_time}}
+      </view>
+    </view>
+    <view class="comment">
+      <block wx:if="{{item.comment!='null'}}">
+        <text style="font-size:30rpx;color:#828282">{{item.comment}}</text>
+      </block>
+      <block wx:else>
+        <text style=" font-size:30rpx;color:#828282">对方没有备注</text>
+      </block>
+    </view>
+    <view class="tail">
+      <view class="dianzan" data-id="{{item.id}}" bindtap="accept">
+        <text style='margin-left:15rpx;color:rgb(0, 119, 255)'>同意</text>
+      </view>
+      <view class="pinglun">
+        <text style='margin-left:18rpx;color:red' data-id="{{item.id}}" bindtap="reject">拒绝</text>
+      </view>
+    </view>
+  </view>
+</block>

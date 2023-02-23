@@ -1,0 +1,51 @@
+.history-table-wrap{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  /* 表格代码   */
+  .table{
+    /* border:1px solid #dadada; */
+    border:1px solid #abd6e1;
+    border-right:0;
+    border-bottom: 0;
+    width: 98%;
+    margin: 0 auto;
+  }
+  .tr{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .th,.td{
+    padding: 10px;
+    border-bottom: 1px solid #abd6e1;
+    border-right: 1px solid #abd6e1;
+    text-align: center;
+    width: 100%;
+  }
+  .th1,.td1{
+    width: 10%;
+  }
+  .th2,.th3,.th4,.td2,.td3,.td4{
+    width: 30%;
+  }
+  .th{
+    font-weight: 800;
+    font-size: 26rpx;
+    color: #330e0e;
+  }
+  .td{
+    font-size: 24rpx;
+  }
+  .title{
+    width: 80%;
+    margin: 10rpx auto;
+    /* margin-top: 10rpx; */
+    font-size: 12px;
+    color:rgb(136, 136, 136);
+    text-align: center;
+  }
+  .title text{
+    margin: 0 10rpx;
+  }

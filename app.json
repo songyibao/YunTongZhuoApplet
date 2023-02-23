@@ -1,0 +1,51 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/tabbar/deskmate/deskmate",
+        "pages/tabbar/my/my",
+        "pages/tabbar/study/study",
+        "pages/login/login",
+        "pages/tabbar/deskmate/look/look",
+        "pages/tabbar/deskmate/search/search",
+        "pages/tabbar/my/changeinfo/changeinfo",
+        "pages/tabbar/deskmate/mydeskmate/mydeskmate",
+        "pages/tabbar/rank/rank"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "selectedColor": "#46AFC4",
+        "list": [
+            {
+                "pagePath": "pages/tabbar/deskmate/deskmate",
+                "text": "我的同桌",
+                "iconPath": "/images/tabbar/deskmate.png",
+                "selectedIconPath": "/images/tabbar/deskmate_se.png"
+            },
+            {
+                "pagePath": "pages/tabbar/rank/rank",
+                "text": "学习排行",
+                "iconPath": "/images/tabbar/rank.png",
+                "selectedIconPath": "/images/tabbar/rank_se.png"
+            },
+            {
+                "pagePath": "pages/tabbar/study/study",
+                "text": "学习生涯",
+                "iconPath": "/images/tabbar/study.png",
+                "selectedIconPath": "/images/tabbar/study_se.png"
+            },
+            {
+                "pagePath": "pages/tabbar/my/my",
+                "text": "个人信息",
+                "iconPath": "/images/tabbar/my.png",
+                "selectedIconPath": "/images/tabbar/my_se.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
